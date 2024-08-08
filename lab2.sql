@@ -14,7 +14,7 @@ set serveroutput on
 declare
 cursor curr is select *from part1;
 cursor shipments_cursor is select shipmentid, pno, quantityshipped
-from shipments;
+from shipment;
 counter int;
 rows part1%rowtype;
 begin
